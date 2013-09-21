@@ -1,5 +1,23 @@
-copied C:\Users\Greg\Documents\Visual Studio 2012\Projects\RepoDemos\CodeTalks2
-into   C:\Users\Greg\Documents\Visual Studio 2012\Projects\RepoDemos\CodeTalks3
+==========
+2013-09-20
+----------
+copied \RepoDemos\CodeTalks2 into   \RepoDemos\CodeTalks3
 
-2 only has Talk repository
-3 adds in  Comment repository
+CodeTalk2 only has Talk object repository
+
+CodeTalk3 adds in:
+- Comment repository
+- Ninject
+
+==========
+2013-09-18
+----------
+
+CodeTalk2 - data sig demo  - A completed solution created during the data sig presentation on 2013-09-18
+from 
+CodeTalk2 - Starting point - A solution made from an MVC4 website project with empty projects/folders and references added.
+
+How to get started with the lab:
+Copy and rename the Starting point solution then follow the CodeTalk2 - Steps.docx to go from the starting point to a completed demo 
+
+you can use the - Reference or - data sig demo solutions for comparison
