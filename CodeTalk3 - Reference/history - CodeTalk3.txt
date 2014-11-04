@@ -1,0 +1,55 @@
+------------------
+CodeTalk3 
+- flesh out Talks
+- add Comments
+------------------
+3a ITalkRepository
+   - add GetTalkByID, EditTalk, DeleteTalk
+
+3b TalkRepository 
+   - refactor ctor
+
+3c TalkRepository 
+   - add GetTalkByID, EditTalk, DeleteTalk
+
+3d ITalkService
+- add GetTalkByID, EditTalk, DeleteTalk
+
+3e TalkService
+   - refactor ctor
+
+3f TalkService
+   - rename repo to talkRepository
+
+3g TalkService
+   - add GetTalkById, EditTalk, DeleteTalk
+
+3h TalkController
+   - ctor
+
+3i TalkController
+   - add Edit, Details, Delete
+   - add Views\Talk\Details , Edit
+
+==
+
+Comment
+
+ICommentRepository
+CommentRepository
+
+ICommentService
+CommentService   
+
+CommentController
+
+Views\Comment
+- Index
+- Details
+- Edit
+- Insert
+
+
+
+
+   
