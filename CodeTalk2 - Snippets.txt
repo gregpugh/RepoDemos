@@ -1,0 +1,381 @@
+
+// Talk.cs
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+ 
+namespace CodeTalk.Domain.Models
+{
+    public class Talk
+    {
+        public Talk()
+        {
+            DateCreated = DateTime.Now;
+            DateModified = DateTime.Now;
+        }
+ 
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+ 
+        ICollection<Comment> Comments { get; set; }
+ 
+        public DateTime DateCreated { get; set; }
+        public DateTime DateModified { get; set; }
+ 
+    }
+}
+
+
+
+
+// Comment.cs
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+ 
+namespace CodeTalk.Domain.Models
+{
+    public class Comment
+    {
+        public int Id { get; set; }
+        public string Body { get; set; }
+ 
+        public int TalkId { get; set; }
+ 
+        public DateTime DateCreated { get; set; }
+        public DateTime DateModified { get; set; }
+ 
+    }
+}
+
+
+
+
+// ITalkRepository.cs
+using CodeTalk.Domain.Models;
+ 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+ 
+namespace CodeTalk.Domain.Contracts.Repositories
+{
+    public interface ITalkRepository
+    {
+        IQueryable<Talk> GetTalks();
+        bool AddTalk(Talk newTalk);
+    }
+}
+
+
+
+
+
+
+// CodeTalkContext.cs
+using CodeTalk.Domain.Models;
+ 
+using System;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+ 
+namespace CodeTalk.DataSource
+{
+    class CodeTalkContext: DbContext
+    {
+        
+        public CodeTalkContext()
+              : base("DefaultConnection")
+        {
+        }
+
+         public DbSet<Talk> Talks { get; set; }
+    }
+}
+
+
+
+
+
+
+// TalkRepository.cs
+using CodeTalk.Domain.Contracts;
+using CodeTalk.Domain.Contracts.Repositories;
+using CodeTalk.Domain.Models;
+ 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+ 
+namespace CodeTalk.DataSource.Repositories
+{
+    public class TalkRepository: ITalkRepository
+    {
+        public IQueryable<Talk> GetTalks()
+        {
+            var ctx = new CodeTalkContext();
+            return ctx.Talks;
+        }
+ 
+        public bool AddTalk(Domain.Models.Talk newTalk)
+        {
+            var ctx = new CodeTalkContext();
+            ctx.Talks.Add(newTalk);
+            ctx.SaveChanges();
+            return true;
+        }
+    }
+}
+
+
+
+
+
+
+// ITalkService.cs
+using CodeTalk.Domain.Models;
+ 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+ 
+namespace CodeTalk.Domain.Contracts.Services
+{
+    public interface ITalkService
+    {
+        IList<Talk> GetTalks();
+        bool AddTalk(Talk newTalk);
+    }
+}
+
+
+
+
+// TalkService.cs
+using CodeTalk.Domain.Contracts.Services;
+using CodeTalk.DataSource;
+using CodeTalk.DataSource.Repositories;
+ 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+ 
+namespace CodeTalk.ServiceLayer
+{
+    public class TalkService:ITalkService
+    {
+        public IList<Domain.Models.Talk> GetTalks()
+        {
+            var repo = new TalkRepository();
+            return repo.GetTalks().ToList();
+        }
+ 
+        public bool AddTalk(Domain.Models.Talk newTalk)
+        {
+            var repo = new TalkRepository();
+            return repo.AddTalk(newTalk);
+        }
+    }
+}
+
+
+
+
+
+
+// TalkController.cs
+using CodeTalk.Domain.Models;
+using CodeTalk.ServiceLayer;
+ 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+ 
+namespace CodeTalk.Controllers
+{
+    public class TalkController : Controller
+    {
+        public ActionResult Index()
+        {
+            var talkService = new TalkService();
+            var talks = talkService.GetTalks();
+            return View(talks);
+        }
+ 
+        public ActionResult Insert()
+        {
+            var talk = new Talk();
+            return View(talk);
+        }
+ 
+        [HttpPost]
+        public ActionResult Insert(Talk newTalk)
+        {
+            var talkService = new TalkService();
+            talkService.AddTalk(newTalk);
+            return View();
+        }
+ 
+    }
+}
+
+
+
+
+
+
+// Index.cshtml
+@model IEnumerable<CodeTalk.Domain.Models.Talk>
+ 
+@{
+    ViewBag.Title = "Index";
+}
+ 
+<h2>Index</h2>
+ 
+<p>
+    @Html.ActionLink("Create New", "Insert")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateCreated)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateModified)
+        </th>
+        <th></th>
+    </tr>
+ 
+@foreach (var item in Model) {
+    <tr>
+      <td>
+        @Html.DisplayFor(modelItem => item.Title)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.Description)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.DateCreated)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.DateModified)
+      </td>
+      <td>
+        @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+        @Html.ActionLink("Details", "Details", new { id=item.Id }) |        @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+      </td>
+  </tr>
+}
+ 
+</table>
+
+
+
+
+
+
+// Insert.cshtml
+@model CodeTalk.Domain.Models.Talk
+ 
+@{
+    ViewBag.Title = "Insert";
+}
+ 
+<h2>Insert</h2>
+ 
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+ 
+  <fieldset>
+      <legend>Talk</legend>
+ 
+      <div class="editor-label">
+          @Html.LabelFor(model => model.Title)
+      </div>
+      <div class="editor-field">
+          @Html.EditorFor(model => model.Title)
+          @Html.ValidationMessageFor(model => model.Title)
+      </div>
+ 
+      <div class="editor-label">
+          @Html.LabelFor(model => model.Description)
+      </div>
+      <div class="editor-field">
+          @Html.EditorFor(model => model.Description)
+          @Html.ValidationMessageFor(model => model.Description)
+      </div>
+ 
+      <div class="editor-label">
+          @Html.LabelFor(model => model.DateCreated)
+      </div>
+      <div class="editor-field">
+          @Html.EditorFor(model => model.DateCreated)
+          @Html.ValidationMessageFor(model => model.DateCreated)
+      </div>
+ 
+      <div class="editor-label">
+          @Html.LabelFor(model => model.DateModified)
+      </div>
+      <div class="editor-field">
+          @Html.EditorFor(model => model.DateModified)
+          @Html.ValidationMessageFor(model => model.DateModified)
+      </div>
+ 
+      <p>
+          <input type="submit" value="Create" />
+      </p>
+  </fieldset>
+}
+ 
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+ 
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+
+
+
+
+// 
+
+
+
+
+
+// 
+
+
+
+
+
+

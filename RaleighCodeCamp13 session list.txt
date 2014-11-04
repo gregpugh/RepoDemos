@@ -1,0 +1,423 @@
+
+Raleigh Code Camp 2013 Sessions
+
+
+--------------------------------------------------------------------------------
+ 
+
+
+"this" isn't what you think it is: JavaScript for Object oriented programmers
+ 
+Time: 1:00 PM, Room: 255
+
+Speaker Joel Cochran  Bio
+
+Details: JavaScript is not just for DOM manipulation: with its growing presence in browsers, on servers, and now the desktop with Windows 8, JavaScript is fast becoming the ubiquitous programming language. Regardless of your background, odds are pretty good that JavaScript will be part of your future. JavaScript has a unique feature set that can make it challenging for object oriented programmers. In this introductory session we'll discuss some of JavaScript's pitfalls and strengths. We'll take a look at strategies for developing JavaScript namespaces, classes, and objects from an object oriented perspective. We'll also discuss some of the more popular JavaScript libraries that you'll definitely want to have in your toolbox.
+
+--------------------------------------------------------------------------------
+ 
+
+
+.Net Metaprogramming Essentials
+ 
+Time: 10:30 AM, Room: 265
+
+Speaker Sean McCarthy  Bio
+
+Details: We'll first take a look at some useful building blocks for metaprogramming in .Net and then explore a concrete example using them. You'll leave this session with an understanding of metaprogramming in .Net and how you can leverage it with your work.
+
+--------------------------------------------------------------------------------
+ 
+
+
+3D Printing
+ 
+Time: 4:00 PM, Room: 340
+
+Speaker David Bates  Bio
+
+Details: 
+
+--------------------------------------------------------------------------------
+ 
+
+
+Advanced Regular Expressions
+ 
+Time: 4:00 PM, Room: 270
+
+Speaker Mark Hutchinson  Bio
+
+Details: This is a condensed version of the three hour presentation I've done in the second and third TriMOUG meetings on this topic. This presentation assumes the attendees are already programmers.
+
+--------------------------------------------------------------------------------
+ 
+
+
+An Honest Look at Independence
+ 
+Time: 2:30 PM, Room: 270
+
+Speaker Jim Christopher  Bio
+
+Details: It’s rare to have a true employer these days – instead developers race to project deadlines, after which their future is up in the air. A growing number of developers are steering themselves into careers of independent consulting and software development. In an hour session, we will explore my story of independence – the glorious benefits of the freedom and the terrifying responsibility that is all a part of running your own life. In particular, we’ll see how being independent has almost nothing to do with my work and career and everything to do with my attitude and choices. This talk will include: A close look at the financial impact of becoming my own boss; The psychological ups and downs of running my own life; The difficult (and sometimes moronic) choices I’ve been forced to make; Discussion of the legal responsibilities I took on when starting my business; How I get to spend a typical day at the “noffice”. Going independent isn’t a panacea to your career woes, it’s a compromise like everything else. It is a wonderful lifestyle, provided you understand what you’re getting into.
+
+--------------------------------------------------------------------------------
+ 
+
+
+Asynchronous Programming in .Net
+ 
+Time: 9:00 AM, Room: 265
+
+Speaker Steve Willoughby  Bio
+
+Details: Asynchronous programming is a complex topic. On top of the moving pieces in the operating system that make it work, there is a large list of terminology and potential pitfalls. But armed with some concepts and a working knowledge of the .Net syntax, you can be productive in asynchronous programming in pretty short order. We'll cover the basics about Thread Safety, Data Parallelism, and Task Parallelism as implemented in the .Net 4.5 Framework and pick apart a number of code samples. Along the way, we'll discuss when async is a good idea and when it should be avoided. If you're new to threading, this should give you a good jumpstart. If you're an old hand, please come and share your experience. We'll pack as much of this fascinating topic into an hour as we can! 
+
+--------------------------------------------------------------------------------
+ 
+
+
+Bootstrap 101: Create Modern, Professional Websites Without a Web Designer
+ 
+Time: 2:30 PM, Room: 280
+
+Speaker Jim Duffy  Bio
+
+Details: It's fairly safe to assume that we all share the common goal of wanting our web and mobile applications to look professional and visual appealing. Unfortunately reality steps in with a good news, bad news situation. The bad news is we all don't have access to a web designer to help us achieve our goal. The good news is there are tools & frameworks available to make that lofty goal attainable by mere mortals like you! One of those tools is the free and incredibly popular Twitter Bootstrap. In this session you will be introduced to the Twitter Bootstrap toolkit and learn how to use it to build professional and visual appealing web and mobile applications. You only need to come equipped with very basic HTML & CSS skills.
+
+--------------------------------------------------------------------------------
+ 
+
+
+BreezeJS - Rich Data for JavaScript Apps
+ 
+Time: 9:00 AM, Room: 255
+
+Speaker Kevin Hennessy  Bio
+
+Details: BreezeJS is a data management library for JavaScript that makes it easy to query data from the server. Breeze’s simple, yet powerful API allows you to make complex queries against the server, cache the data on the client for performance, and supports offline scenarios. When used with a databinding framework like Knockout, Breeze enables you to code in a familiar architectural pattern like MVC or MVVM and keep your view separate from your business logic. In this session, we’ll explore how Breeze works in a Single Page Application (SPA), the template support in Visual Studio, and examine several sample applications.
+
+--------------------------------------------------------------------------------
+ 
+
+
+Bring Messaging to your .Net application using RabbitMQ and AMQP
+ 
+Time: 2:30 PM, Room: 265
+
+Speaker Steven Suing  Bio
+
+Details: We’ll go over the basics of messaging systems and why you might consider adding messaging to your backend. Then we’ll have an overview of RabbitMQ and AMQP. Finally we’ll implement some EIP patterns using RabbitMQ and C# so that you can build scalable applications
+
+--------------------------------------------------------------------------------
+ 
+
+
+Build a MVC eCommerce Site in Under 5 Minutes
+ 
+Time: 4:00 PM, Room: 255
+
+Speaker Gaines Kergosien  Bio
+
+Details: For those of us who have spent most of our careers building business applications, the prospect of creating an e-commerce storefront can be quite daunting. Not only do you have to deal with calculating tax, estimating shipping and accepting payments, but employees need a way to manage products, discounts and marketing content. Thankfully, there's an open source e-commerce solution written in Microsoft ASP.NET MVC named nopCommerce that provides all this functionality and much more. I was so impressed by both the functionality and the underlying architecture that I've created a presentation which I believe will serve as a great introduction to MVC as well as a tutorial on developing custom storefronts using nopCommerce. We start off with a brief overview of basic MVC concepts accompanied by examples within the nopCommerce code. This includes strongly typed Razor views, HTML helpers, jQuery ajax calls, and fluent validation. Once everyone understands how the website works, we dive into the infrastructure by introducing WCF services, using a generic repository with Entity Framework(EF4) and LINQ, as well as Dependency Injection (DI) with Automapper.
+
+--------------------------------------------------------------------------------
+ 
+
+
+Build Windows Store Apps using JavaScript
+ 
+Time: 1:00 PM, Room: 280
+
+Speaker Mark Wilson  Bio
+
+Details: You can build Windows Store apps using JavaScript and reuse your skills, existing code, and even popular frameworks. But should you? How is an app different from a website? How do you get popular JS frameworks to work without crashing your app? In this session, we will answer these questions and also share some best tips and pragmatic advice for building Windows Store apps using JavaScript.
+
+--------------------------------------------------------------------------------
+ 
+
+
+Building a cloud enabled home security system Part 1 of 2 (the presentation)
+ 
+Time: 1:00 PM, Room: 340
+
+Speaker Mike Linnen  Bio
+
+Details: This is part one of a two part session that covers the theory behind building a security system that consists of multiple Netduino's all connected to an Azure cloud service. The attendees of this session will get a demo of the security system and a presentation on how the system was put together using technologies such as SignalR, .Net Micro Framework, and MQTT message brokers. At the end of this session the attendees will set up their laptops in preparation for part 2 (lab). Take a look at http://www.cloudhomesecurity.com/ for more details on the project. 
+
+--------------------------------------------------------------------------------
+ 
+
+
+Building a cloud enabled home security system Part 2 of 2 (the lab)
+ 
+Time: 2:30 AM, Room: 340
+
+Speaker Mike Linnen  Bio
+
+Details: This is part two of a two part session. It is desirable that attendees of this session have also attended part 1 so they have an understanding of what they are building. The attendees of this session will form into teams in order to build 1 of the 11 devices used in the security system. The goal in this session is to follow the lab format to assemble the devices (it is easy don’t worry about it) and code the solution. Multiple teams will have to complete their individual devices in order for the entire security system to fully function. Take a look at http://www.cloudhomesecurity.com/ for more details on the project. 
+
+--------------------------------------------------------------------------------
+ 
+
+
+Building an Eject-A-Bed
+ 
+Time: 9:00 AM, Room: 340
+
+Speaker Jamie Dixon  Bio
+
+Details: In this makers faire, we will look at how to build an Eject-A-Bed. You can see the bed in action here: http://www.youtube.com/watch?v=QJG2seTFcxQ Channeling our inner McGivor, We will use 1) Netduinos 2) Windows RT 3) An erector set 4) Used Medical equipment 4) Some duct tape 5) Pipe Cleaners No prior experience with any of these technologies is assumed. Except for the pipe cleaners.
+
+--------------------------------------------------------------------------------
+ 
+
+
+Building data-driven mobile apps with PhoneGap and ASP.NET WebAPI
+ 
+Time: 4:00 PM, Room: 235
+
+Speaker Derek Smith  Bio
+
+Details: In this session, we'll explore how to marry a WebAPI service layer with a PhoneGap ready HTML5 web app to create a data rich mobile app for iPhone or Android. We'll focus on authentication, retrieving and displaying data, and handling CRUD operations. 
+
+--------------------------------------------------------------------------------
+ 
+
+
+Building Real Time Web Applications with SignalR
+ 
+Time: 1:00 PM, Room: 235
+
+Speaker Kevin Griffin  Bio
+
+Details: In the beginning, we had static websites. Then we invented AJAX, and our websites became alive with dynamic content. Now we're getting to a point where we'd like to have our web applications work in cool asynchronous ways across all of it's connected users. The typically example would be a chat room. You send a message to the server, and the server broadcasts it to everyone who's in your room. In the past, in order to build a system like that took time and code. How about dynamically refreshing content in your application based on events that happen on the server? SignalR is a library that assists you in building real-time, multi-user interactive web applications. In this talk, we'll discuss the current state of the real time web, and then WOW you with quick, easy, and code-filled demos showing off the power of SignalR.
+
+--------------------------------------------------------------------------------
+ 
+
+
+Developing iOS 7 Apps with Xamarin and C#
+ 
+Time: 4:00 PM, Room: 260
+
+Speaker Diane Wilson  Bio
+
+Details: We'll cover the basics of writing iOS apps using C#, with a focus on portability to Android and Windows. In addition, we'll cover new iOS 7 and Xamarin features to support AutoLayout, TextKit, view transitions, animations, and C#'s async, await, and Task features in mobile applications.
+
+--------------------------------------------------------------------------------
+ 
+
+
+Displaying data in the Kendo UI for MVC grid and chart widgets.
+ 
+Time: 2:30 PM, Room: 260
+
+Speaker MIke Dwyer  Bio
+
+Details: Have a step by step presentation of displaying Northwind database data in the Kendo grid and charts by setting up a Visual Studio MVC4 solution utilizing the Kendo UI suite from the ground up. I will highlight some of the grids features as well as visualizing the same data in several different chart types with different graphing options.
+
+--------------------------------------------------------------------------------
+ 
+
+
+Game Programming with Construct2
+ 
+Time: 4:00 PM, Room: 265
+
+Speaker Gabe Condie  Bio
+
+Details: Construct2 is a great [free!] way to create 2D games that will run on Win8, Win Phone 8 and can be easily ported to HTML5, Facebook, iOS, Android, Amazon Kindle, etc. Make your game do what it needs to do in a visual and human readable way with the powerful event system. Construct 2 is a powerful ground breaking HTML5/JavaScript game creator designed specifically for 2D games. It allows anyone to build great games quickly. It's ideal for beginners and powerful enough for experts. https://www.scirra.com/ 
+
+--------------------------------------------------------------------------------
+ 
+
+
+Getting Started with Windows Azure Mobile Services
+ 
+Time: 10:30 AM, Room: 260
+
+Speaker Rob Zelt  Bio
+
+Details: Windows Azure Mobile Services offer a wide variety of support for many mobile platforms. In this session we'll take a look at how to get started usign WAMS to do the hard work while you focus on building your app.
+
+--------------------------------------------------------------------------------
+ 
+
+
+High Availability/Disaster Recovery in Windows Azure
+ 
+Time: 1:00 PM, Room: 260
+
+Speaker Michael McKeown  Bio
+
+Details: Outlines the necessary architecture steps to be taken to disaster-proof a Windows Azure deployment so that the larger business continuity process can be implemented. A business continuity plan is a roadmap for continuing operations under adverse conditions. This could be a failure with technology, such as a downed service, or a natural disaster, such as a storm or power outage. Application resiliency for disasters is only a subset of the larger DR process as described in this NIST document: Contingency Planning Guide for Information Technology Systems. This information provides input into your DR processes and procedures to ensure your DR strategy works correctly and efficiently. 
+
+--------------------------------------------------------------------------------
+ 
+
+
+How to Be a Six Figure Developer
+ 
+Time: 1:00 PM, Room: 270
+
+Speaker Gaines Kergosien  Bio
+
+Details: Microsoft .NET developers are in extremely high demand and rates continue to climb, but many developers have not yet realized their potential. In this talk we lay out some simple and proven ways to make yourself a more valuable employee and build your personal brand.
+
+--------------------------------------------------------------------------------
+ 
+
+
+How to keep your MVVM code from turning into spaghetti
+ 
+Time: 9:00 AM, Room: 280
+
+Speaker Ash Tewari  Bio
+
+Details: In this session, you will learn how to use Layer Diagrams to express and enforce the architectural constraints in your Visual Studio solution. We will use the example of a solution structured as a Model-View-ViewModel application and see how a Layer Diagram can be used to maintain the architectural integrity of an MVVM application.
+
+--------------------------------------------------------------------------------
+ 
+
+
+HTTP/2.0 and SPDY/3: Running with a Faster Web
+ 
+Time: 9:00 AM, Room: 260
+
+Speaker Ian Cillay  Bio
+
+Details: The Web has been stuck with the performance limitations of HTTP/1.1 since 1996. One day after the conclusion of the IETF 88 meeting to standardize the HTTP/2.0 specification, let's examine the status of the draft spec and Microsoft's first complete server and client prototype of HTTP/2.0 in its open source Katana Project. We will also take a look at the biggest influencer of the HTTP/2.0 spec, the SPDY protocol from Google which has had browser support in Chrome, then Firefox, and now finally in a Microsoft browser with the release of IE 11. Finally, we will run IIS in Azure over the SPDY/3 protocol by setting up a reverse proxy with NGINX in Linux virtual machine, also in Azure.
+
+--------------------------------------------------------------------------------
+ 
+
+
+Internet of Things - Netduino, Kinect Lab
+ 
+Time: 10:30 AM, Room: 340
+
+Speaker Dan Thyer  Bio
+
+Details: This will be a hands on lab! Learn how to build things with technology that connect to the physical world. The lab will use image processing from the Microsoft Kinect sensor to talk over the network to netduino microcontrollers to move servos. The attendees will use gestures to move a machine with pan/tilt servos. Dan uses the same technology covered in the lab to move servos aiming a hose to spray swimmers in his pool! http://www.youtube.com/watch?v=FWINsKcP8oQ For Halloween, Dan used the technology to control 3 monsters with a Microsoft Kinect and he threw in a mobile web app! http://www.youtube.com/watch?v=H1cJL4WBQMI Chris Walker, the creator of the Netduino featured Dan’s projects while talking about the netduino community in a video to kick off his book. http://www.youtube.com/watch?v=i3lPiWg4UHI Dan's article on home automation with Netduino and Kinect won second place for the best C# article for January 2012 on the CodeProject: http://www.codeproject.com/Articles/314774/Home-Automation-with-Netduino-and-Kinect The lab will use C# code for the Netduino microcontroller and show you how easy it is to read an angle from human joint with the Kinect and move servos to mirror the movement in a machine. See Dan’s projects on Microsoft Channel 9 Coding4fun: * http://channel9.msdn.com/coding4fun/blog/Home-Automation-Kinect-Netduino-and-a-Squirt-Gun-oh-my * http://channel9.msdn.com/coding4fun/blog/Home-Automation-with-some-help-from-jQuery-Mobile-MVC-and-Netduino * http://channel9.msdn.com/coding4fun/kinect/A-Kinect--Netduino-controlled-squirt-gun * http://channel9.msdn.com/coding4fun/kinect/Halloween-Insanity-with-help-from-the-Kinect-and-Netduino 
+
+--------------------------------------------------------------------------------
+ 
+
+
+Introduction to F#
+ 
+Time: 1:00 PM, Room: 265
+
+Speaker Jamie Dixon  Bio
+
+Details: Back in 2010, Visual Studio shipped with a new language on board: F#.  F# is a fantastic language - it mixes functional and Object Oriented approaches seamlessly, encourages writing bug-free code, comes with great features, and is incredibly productive.  Recently, I partnered with an Actuarial department to do an app using F# and R to do some real-time statistical analysis and have it seamlessly integrate into a .NET application.  The results are pretty amazing – an end-to-end Line Of Business app that combines the statistical power and speed of R with the productivity, reusability, and rapid development of the .NET stack.   For the C#/VB.NET developer accustomed to Object Oriented thinking, F# can be a bit daunting at first.  The session’s goal is to get you over that initial shock and awe of working with a functional language.  This talk will focus on F# with an emphasis of real-world examples to show you its awesomeness.   It assumes no prior experience with F# or functional languages. 
+
+--------------------------------------------------------------------------------
+ 
+
+
+Less Code, More Football With Angular JS
+ 
+Time: 10:30 AM, Room: 235
+
+Speaker Tom Becker  Bio
+
+Details: A maintainable code base is very important for all of your applications. And what is the easiest way to make source code more maintainable? Less code to maintain! In this session we will be looking at AngularJS as a framework to create a Single Page Application (SPA) with a MVC WebAPI back end. Come learn how to create a SPA to wow your users and keep them coming back for more. Thus freeing up your valuable time for important things like football...and queso dip.
+
+--------------------------------------------------------------------------------
+ 
+
+
+Leveraging HTML5 offline storage for performance and versatility
+ 
+Time: 2:30 PM, Room: 255
+
+Speaker Chuck Snell  Bio
+
+Details: HTML5 offers the opportunity for significant client-side storage of data, bit it simple preferences, state, or even cached query results. This presentation explores the opportunities and limitations inherent in HTML5's local storage feature for both online and offline applications. 
+
+--------------------------------------------------------------------------------
+ 
+
+
+Marketing Yourself To Boost Your Career
+ 
+Time: 10:30 AM, Room: 270
+
+Speaker John Sonmez  Bio
+
+Details: Billions of dollars are spent on marketing each year. Celebrities of all sorts enjoy fame and fortune that isn't necessarily related to theirs skills. Why? Because marketing works and like it or not, if you want move beyond a basic career and really open up opportunities for yourself, you've got to learn how to market yourself as a software developer. In this session, I'll teach you some quick and easy things you can do to enhance the marketability of your skills and personal brand immediately and talk about some long term plans you can put into action so that everyone will know your name. 
+
+--------------------------------------------------------------------------------
+ 
+
+
+Meet App Studio for Windows Phone
+ 
+Time: 10:30 AM, Room: 255
+
+Speaker Ginny Caughey  Bio
+
+Details: App Studio is a web-based tool for quickly building Windows Phone apps. These apps can be downloaded and modified in Visual Studio for publication, or they can be published as is to the Windows Phone Store. Come to this session to learn how you or your company can create nice apps in literally just a few hours. More info is available here: http://apps.windowsstore.com/
+
+--------------------------------------------------------------------------------
+ 
+
+
+Mixing JavaScript Frameworks and TypeScript
+ 
+Time: 9:00 AM, Room: 235
+
+Speaker Sidney Andrews  Bio
+
+Details: TypeScript is approaching it's first release and we can use this superset of JavaScript in interesting ways to create strongly-typed code. Because of this, we can ease the transition from server-side code to client-side by leveraging TypeScript with JavaScript frameworks such as SignalR, jQuery and AngularJs. We will look at some of the language constructs in TypeScript to allow us to write robust and reusable code utilizing these (and other) frameworks.
+
+--------------------------------------------------------------------------------
+ 
+
+
+Patterns of Agile Testing Practices: Putting Lean Startup in the Enterprise, LeanUX, ATDD, BDD and TDD together into a nice pipeline
+ 
+Time: 9:00 AM, Room: 270
+
+Speaker Devin B. Hedge  Bio
+
+Details: When adopting Agile, many practitioners find themselves lost is a see of philosophies about test-first development. The recent additions of Lean Startup in the Enterprise/Lean Experimentation, LeanUX, Acceptance-Test Driven Development (ATDD), Behavior Driven Development (BDD), and Test Driven Development (TDD) have created a lot of confusion. Building off of late-night conversations with Janet Gregory, Johanna Rothman, Esther Derby and George Dinwiddie, this session will pull together the shared experience of many of the thought leaders around Agile Quality Assurance. I will contrast the different approaches to ensuring product quality, give a couple roadmaps to implementation, and review they fit together in the product build pipeline. Session attendees should walk away with a good definitions of the different approaches to Product Quality Assurance, and understand where to apply each approach and use them in combination to create Product Quality in depth and breadth.
+
+--------------------------------------------------------------------------------
+ 
+
+
+Repository and Unit of Work Patterns
+ 
+Time: 10:30 AM, Room: 280
+
+Speaker Greg Pugh  Bio
+
+Details: First a quick introduction to the Repository pattern, why to use it, and an explanation of how it relates to the Unit of Work pattern. To show how to code these patterns, we'll build a simple example using an ASP.NET MVC4 app with an EF database. Then we'll refactor away duplicate code with generics and use Ninject for dependency injection. To put these patterns into action and illustrate the flexibility they can provide we'll add variety with a Web API, and enable testing by swapping in a mock database. 
+
+--------------------------------------------------------------------------------
+ 
+
+
+Use,Tips and Tricks to getting started with Git and GitHub
+ 
+Time: 4:00 PM, Room: 265
+
+Speaker Joe Feser  Bio
+
+Details: Clones, forks, branches, pull requests... Help this sounds complicated. It is not. We will learn how to get up and running with Git and Github. We will go over the tools that you need and how to configure Git while comparing GitExtensions and GitHub for Windows. Other topics that will be covered include branching, merging, pulling and pushing code to the master repository using both GitExtensions and GitHub for Windows. We will also touch on advanced features like cherry picking. With all this knowledge, we will wrap up with contributing to open source projects with pull requests. A sample of the slides can be found here http://joefeser.github.com/git-presentation/#/
+
+--------------------------------------------------------------------------------
+ 
+
+
+Using Asp.Net Web Api
+ 
+Time: 2:30 PM, Room: 235
+
+Speaker Derik Whittaker  Bio
+
+Details: In this session we will start at the beginning and learn all about Web API and what it has to offer. The good news is that if you have used ASP.Net MVC then using Web API will be comfortable to you. This session will be an interactive demo session so we will be spending the majority of our time inside Visual Studio getting our hands dirty learning about many of the features of Web API. Some of these features include its hosting options, what actions are and how to use them as well as how routing plays a critical role in building endpoints.
