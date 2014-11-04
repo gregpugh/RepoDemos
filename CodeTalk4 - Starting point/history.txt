@@ -1,0 +1,5 @@
+copied C:\Users\Greg\Documents\Visual Studio 2012\Projects\RepoDemos\CodeTalks2
+into   C:\Users\Greg\Documents\Visual Studio 2012\Projects\RepoDemos\CodeTalks3
+
+2 only has Talk repository
+3 adds in  Comment repository

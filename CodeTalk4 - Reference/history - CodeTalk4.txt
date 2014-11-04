@@ -1,0 +1,79 @@
+--
+CodeTalk4 - Home controller/page showing Talks with Comments
+--
+
+4a HomeController
+   - using CodeTalk.Domain.Models;
+   - using CodeTalk.ServiceLayer;
+
+   - ctor, talkService
+
+4b HomeController
+   - Index()
+4c Views\Home\Index
+   - <ul>
+		@foreach (CodeTalk.Domain.Models.Talk talk in Model)
+		{ 
+			<li>
+				@* 4c @talk.Title*@
+			</li>
+		}
+	</ul>					
+
+4d Views\Home\Index
+   - <h2>@Html.ActionLink(talk.Title, "Edit", "Talk", new { id = talk.Id }, null)</h2>   @* 4d *@
+
+4e Views\Home\Index
+   - <p>@Html.ActionLink("Submit Talk", "SubmitTalk","Home")</p>    @* 4e *@
+   
+4f HomeController
+   - SubmitTalk()
+
+4f Views\Home\SubmitTalk   ...(add this new view)
+
+4g  Views\Home\Index
+	- 	@* 4g *@
+		<ul>
+			@foreach (CodeTalk.Domain.Models.Comment comment in talk.Comments)
+			{ 
+				<li>
+					<p>@comment.Body</p>
+					<p><i>@comment.Commentor</i></p> @* 4j *@
+				</li>
+			}
+		</ul>
+4g.1 TalkRepository
+     - GetTalks()  .Include("Comments");
+
+4h Views\Home\Index
+			</ul>
+			<p>@Html.ActionLink("Add Comment", "AddComment", "Home", new { id=talk.Id }, null)</p>  @* 4h *@
+		</li>
+
+4i HomeController
+   - ctor, commentService
+   - AddComment()
+
+4i Views\Home\AddComment   ...(add this new view)
+   
+4j Comment
+   - add Commentor property
+   - enable-migrations, add-migration name, update-database
+   - add [Required] , System.ComponentModel.DataAnnotations
+
+4j Views\Home\Index
+   <li>
+		<p>@comment.Body</p>
+		<p><i>@comment.Commentor</i></p> @* 4j *@
+	</li>
+
+4j Views\Home\AddComment	
+	@* 4j *@
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Commentor)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Commentor)
+            @Html.ValidationMessageFor(model => model.Commentor)
+        </div>
+
