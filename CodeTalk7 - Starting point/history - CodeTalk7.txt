@@ -1,0 +1,31 @@
+--
+CodeTalk7  - Mock Repository
+--
+
+
+// todo: remove these from starting point
+
+6- \Controllers
+   - create \Web
+   - create \Api
+   - move extisting controllers in to \Web
+
+6a \Api\TalksController
+   - ctor
+   
+6b \Api\TalksController
+   - Get() 
+
+6c NinjectWebCommon
+   - nuget WebApiContrib.IoC.Ninject
+   - using System.Web.Http;
+   - using WebApiContrib.IoC.Ninject;
+   - CreateKernel()
+     DependencyResolver
+	 
+6d WebApiConfig
+   - jsonFormatter
+
+6e \Api\TalksController
+   - Post() 
+   

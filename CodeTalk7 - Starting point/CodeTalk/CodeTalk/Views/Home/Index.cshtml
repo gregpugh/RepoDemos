@@ -1,0 +1,41 @@
+﻿@model IEnumerable<CodeTalk.Domain.Models.Talk>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@section featured{
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>Code Talks</h1>
+            </hgroup>
+
+            <ul>
+                @foreach (CodeTalk.Domain.Models.Talk talk in Model)
+                { 
+                    <li>
+                                                
+                        <h2>@Html.ActionLink(talk.Title, "Edit", "Talk", new { id = talk.Id }, null)</h2> 
+
+                        <ul>
+                            @foreach (CodeTalk.Domain.Models.Comment comment in talk.Comments)
+                            { 
+                                <li>
+                                    <p>@comment.Body</p>
+                                    <p><i>@comment.Commentor</i></p>
+                                </li>
+                            }
+                        </ul>
+                        
+                        <p>@Html.ActionLink("Add Comment", "AddComment", "Home", new { id=talk.Id }, null)</p>  
+
+                    </li>
+                }
+            </ul>
+
+            <p>@Html.ActionLink("Submit Talk", "SubmitTalk","Home")</p>   
+
+        </div>
+    </section>
+}
