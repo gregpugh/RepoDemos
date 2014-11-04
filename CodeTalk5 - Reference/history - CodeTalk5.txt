@@ -1,0 +1,38 @@
+--
+CodeTalk5 - Ninject
+--
+
+5a HomeController
+   - private variables
+   - ctor
+   
+5b NinjectWebCommon
+   - using...
+   - RegisterServices
+   
+
+5c TalkController
+   - private variables
+   - ctor
+
+5d CommentController
+   - private variables
+   - ctor
+
+5e TalkService
+   - private variables
+   - ctor
+
+5f CommentService
+   - private variables
+   - ctor
+
+5g TalkRepository
+   - private variables
+   - ctor
+
+5h CommentRepository
+   - private variables
+   - ctor
+
+5i FakeCodeTalkContext
